@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+
+        /*Links*/
+
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: darkgreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: chartreuse;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: blueviolet;
+        }
+
+        .especial{
+            background-color: darkgreen;
+        }
+
+        .especial:hover{
+            color: white;
+        }
+
+        .especial::before{
+            content: '☣ ';
+        }
+
+        .especial::after{
+            content: ' ☣';
+        }
+
+        /*Divs*/
+
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            font-size: 10em;
+            color: white;
+        }
+
+        #d1:hover{
+            background-color: #008000;
+            color: lightgreen;
+        }
+        
+        #d2:hover{
+            background-color: #a5b100;
+            color: lightyellow;
+        }
+
+        #d3:hover{
+            background-color: #850202;
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://www.canva.com" target="_blank">Canva</a></li>
+        <li><a href="https://www.twitch.tv" target="_blank" class="especial">Twitch</a></li>
+    </ul>
+
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+</html>

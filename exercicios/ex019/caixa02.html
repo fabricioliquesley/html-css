@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(95, 95, 95);
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        nav > a:active{
+            color: lawngreen;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            height: 690px;
+            border-radius: 15px 0px;
+            box-shadow: 4px 3px 4px 1px rgba(0, 0, 0, 0.315);;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(146, 145, 145);
+            padding: 5px;
+        }
+
+        footer{
+            height: 57px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article id="n1">
+                <h2>Notícia do dia</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, qui aliquam? Tempora, totam accusamus consectetur consequatur animi ipsa tenetur assumenda, itaque saepe repellat quas soluta? Sed sapiente consequuntur alias eligendi?
+                </p>
+                <aside>
+                    <p>
+                        Essa notícia foi escrita por Pedro Augusto Silva
+                    </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Desenvolvido por Fabricio Liquesley
+        </p>
+    </footer>
+</body>
+</html>
