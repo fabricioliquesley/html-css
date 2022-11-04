@@ -7,6 +7,8 @@
     <title>Tela de login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <!-- Link icones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <main>
@@ -17,8 +19,17 @@
                 <p>
                     seja bem-vindo(a) novamente. Faça login para ter acesso a sua conta.
                 </p>
-                <form action="login.php" method="get">
-                    
+                <form action="login.php" method="get" autocomplete="on">
+                    <div class="campo">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mael" autocomplete="email" required maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <i class='bx bxs-key'></i>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci a senha</a>
                 </form>
             </div>
         </section>
