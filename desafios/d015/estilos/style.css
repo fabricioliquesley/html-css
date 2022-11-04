@@ -4,6 +4,9 @@
     /* Paleta de cores */
     
     --verde: #49a09d;
+    --verde_claro: #56bdb9;
+    --verde_escuro: #1f4241;
+    --hover: #255352;
     --lilas: #5f2c82;
     --preto: #000;
     --branco: #fff;
@@ -61,4 +64,48 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+}
+
+form > div.campo {
+    display: block;
+    background: var(--lilas);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+form > input[type=submit] {
+    display: block;
+    background: var(--verde);
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background: var(--hover);
+}
+
+form > a.botao {
+    display: block;
+    color: var(--verde_escuro);
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid var(--verde_escuro);
+    padding-top: 3px;
+}
+
+form > a.botao:hover {
+    background: var(--hover);
+    color: var(--verde_claro);
 }
