@@ -19,6 +19,8 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Configuração para TABLET */
+
     body {
         background-image: linear-gradient(to top, var(--verde), var(--lilas));
     }
@@ -36,6 +38,11 @@
     section#login > div#formulario {
         float: right;
         width: 70%;
+        padding: 20px;
+    }
+
+    div#formulario > h1 {
+        margin-top: 100px;
     }
 }
 
@@ -58,10 +65,12 @@
         float: left;
         width: 50%;
         height: 100%;
+        padding: 20px;
     }
 
     div#formulario > h1 {
         text-align: center;
+        margin-top: 100px;
         margin-bottom: 10px;
         font-size: 1.8em;
     }

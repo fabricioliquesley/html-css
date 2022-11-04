@@ -4,7 +4,7 @@
     /* Paleta de cores */
     
     --verde: #49a09d;
-    --verde_claro: #56bdb9;
+    --verde_claro: #8cccca;
     --verde_escuro: #1f4241;
     --hover: #255352;
     --lilas: #5f2c82;
@@ -64,15 +64,40 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+    margin-bottom: 20px;
 }
 
 form > div.campo {
-    display: block;
+    display: flex;
+    align-items: center;
     background: var(--lilas);
     width: 100%;
     height: 30px;
     border-radius: 5px;
     margin: 5px 0;
+    border: 2px solid var(--lilas);
+}
+
+div.campo > i {
+    color: var(--branco);
+    font-size: 1.5em;
+    margin: 0 5px;
+}
+
+div.campo > input {
+    background: var(--verde_claro);
+    font-size: 1em;
+    width: calc(100% - 25px);
+    height: 100%;
+    border: none;
+    padding-left: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
+div.campo > input:focus-within {
+    background: var(--branco);
 }
 
 form > input[type=submit] {
