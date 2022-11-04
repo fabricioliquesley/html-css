@@ -37,11 +37,13 @@ section#login {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: width .2s, heigth .2s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: var(--lilas) url(../images/estrutura.jpg)no-repeat;
+    background: var(--lilas) url(../images/estrutura.jpg) no-repeat;
     background-size: cover;
     height: 200px;
 }
